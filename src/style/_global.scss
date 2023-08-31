@@ -1,0 +1,6 @@
+@use "typography";
+
+* {
+  font-family: typography.$body-font;
+  color: DarkGreen;
+}
