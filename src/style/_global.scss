@@ -1,6 +1,43 @@
+@use "colors";
 @use "typography";
 
 * {
   font-family: typography.$body-font;
-  color: DarkGreen;
+  font-weight: 500;
+}
+
+body {
+  background: colors.$cream;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-button {
+  width: 236px;
+  height: 48px;
+  border-radius: 8px;
+  background: #3d8168;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  color: colors.$white;
+  border: none;
+  gap: 8px;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: colors.$very-dark-cyan;
+    cursor: pointer;
+  }
 }
