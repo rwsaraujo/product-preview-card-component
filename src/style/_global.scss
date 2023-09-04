@@ -1,20 +1,17 @@
 @use "colors";
 @use "typography";
 
-* {
-  font-family: typography.$body-font;
-  font-weight: 500;
-}
-
 body {
   background: colors.$cream;
+  font-family: typography.$body-font;
+  font-weight: 500;
 }
 
 .container {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 28px 16px;
 }
 
 .flex-center {
@@ -24,7 +21,8 @@ body {
 }
 
 .shop-button {
-  width: 236px;
+  width: 100%;
+  max-width: 236px;
   height: 48px;
   border-radius: 8px;
   background: #3d8168;

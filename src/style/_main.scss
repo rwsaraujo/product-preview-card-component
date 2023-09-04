@@ -7,18 +7,18 @@ main {
 
 .card {
   display: flex;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   height: 450px;
   border-radius: 8px;
   background: colors.$white;
 
   .product-image {
     width: 50%;
-
-    img {
-      width: 100%;
-      border-radius: 8px 0px 0px 8px;
-    }
+    background-image: url("/src/images/image-product-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px 0px 0px 8px;
   }
 
   .product-description {
